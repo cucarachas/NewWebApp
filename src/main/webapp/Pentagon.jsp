@@ -8,7 +8,7 @@
 </head>
 <body bgcolor="FEF9E7">
 <font face="verdana">
-	<h1>Hello!</h1>
+	<h1>Hello Visitor!</h1>
 
 	<p>
 	<p>This is a <font color="blue">Blue Pentagon</font>.
