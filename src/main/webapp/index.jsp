@@ -32,6 +32,7 @@
         <li><a href="Hexagon.jsp">Hexagon</a></li>
     </ol>
     <br>
+    <p>* <i>We let know that we store Statistics on each web page view</i></p>
 	<br>
 	<br>
 	<center>

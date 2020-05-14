@@ -18,6 +18,8 @@
     	<circle cx="75" cy="75" r="75"
     		style="fill:red;stroke:black;stroke-width:1" />
 	</svg>
+	
+	<p>* <i>We let know that we store Statistics on each web page view</i></p>
 </font>
 </body>
 </html>

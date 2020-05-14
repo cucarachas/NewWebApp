@@ -18,6 +18,8 @@
 		<polygon points="0,200 100,200 50,0"
 			style="fill:red;stroke:black;stroke-width:1" />
 	</svg>
+	
+	<p>* <i>We let know that we store Statistics on each web page view</i></p>
 </font>
 </body>
 </html>
