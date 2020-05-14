@@ -13,7 +13,6 @@
 	<p>
 	<p>
 	
-	<!-- Test merging -->
 	<font face="verdana" color="green">
 	<h1>Welcome to CCP6418!</h1>
 	<p>
