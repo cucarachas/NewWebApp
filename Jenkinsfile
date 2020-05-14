@@ -7,6 +7,12 @@ pipeline{
 				echo "Init message"
 			}
 		}
+		stage("Build"){
+			steps{
+				echo "Build succesful"
+				sh "mvn clean package"
+			}
+		}
 
 	}
 }
