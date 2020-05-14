@@ -3,7 +3,7 @@ pipeline{
 
 	stages{
 		stage("Git checkout"){
-			step{
+			steps{
 				echo "Init message"
 			}
 		}
