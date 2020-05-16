@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CCP6418</title>
+<title>CCP6418 Coursework #2</title>
 </head>
 <body bgcolor="FEF9E7">
     <p>
