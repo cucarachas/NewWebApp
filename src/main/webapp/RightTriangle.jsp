@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.*" %> 
+<%@ page import="java.io.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +9,22 @@
 <title>Right Triangle</title>
 </head>
 <body bgcolor="FEF9E7">
+<% 
+try {
+	String connectionURL = "jdbc:mysql://localhost:3306/page_visits?serverTimezone=UTC"; 
+	Connection connection = null; 
+	Class.forName("com.mysql.cj.jdbc.Driver").newInstance(); 
+	connection = DriverManager.getConnection(connectionURL, "root", "");
+		if( !connection.isClosed() ){
+			Statement stmt0 = connection.createStatement();
+			stmt0.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('Right Triangle', NOW())");
+			connection.close();
+		}
+	}
+	catch (SQLException e) {
+		out.println("Unable to connect to database." + e.getMessage());
+	}
+%>
 <font face="verdana">
 	<h1>Hello Visitor!</h1>
 

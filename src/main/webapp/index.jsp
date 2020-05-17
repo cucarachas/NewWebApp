@@ -35,6 +35,11 @@
         <li><a href="Rhombus.jsp">Rhombus</a></li>
     </ol>
     <br>
+    <div>
+    	<a href="ViewStatistics.jsp"><button>View Statistics</button></a>
+    	<a href="#"><button>Reset Statistics</button></a>
+    </div>
+    <br>
     <p>* <i>We let know that we store Statistics on each web page view</i></p>
 	<br>
 	<br>
