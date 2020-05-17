@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Parallelogram</title>
+<title>ResetStatistics</title>
 </head>
 <body bgcolor="FEF9E7">
 <% 
@@ -17,25 +17,14 @@ try {
 	connection = DriverManager.getConnection(connectionURL, "root", "");
 		if( !connection.isClosed() ){
 			Statement stmt0 = connection.createStatement();
-			stmt0.executeUpdate("INSERT INTO PAGE_VISITS (SHAPE, TS) VALUES ('Parallelogram', NOW())");
+			stmt0.executeUpdate("TRUNCATE PAGE_VISITS");
 			connection.close();
 		}
 	}
 	catch (SQLException e) {
-		out.println("Unable to connect to database." + e.getMessage());
+		out.println("Statistics have been reset." + e.getMessage());
 	}
 %>
-<font face="verdana">
-	<h1>Hello Visitor!</h1>
 
-	<p>
-	<p>This is a <font color="purple">Purple Parallelogram</font>.
-	<p>
-	<p>
-	<svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
-		<polygon points="0,0 450,0 400,150 0,150"
-			style="fill:purple;stroke:black;stroke-width:1" />
-	</svg>
-</font>
 </body>
 </html>
